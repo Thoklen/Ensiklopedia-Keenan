@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerajaan Makasar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .header {
+            background-color: #f4f4f4;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .div {
+            padding: 20px;
+            background-color: #e2e2e2;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+         .gambar-responsif {
+            width: 100%;
+            max-width: auto;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+        .nav {
+            text-align: center;
+            padding: 10px;
+            flex-direction: column;
+        }
+
+        .nav a {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .header {
+            padding: 20px;
+        }
+
+        .section {
+            padding: 15px;
+        }
+
+        footer {
+            font-size: 14px;
+        }
+        }
+
+        @media (min-width: 769px) {
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav a {
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+        .section {
+            padding: 30px;
+        }
+        }
+    /* Container utama */
+        .tab-container {
+            width: 80%;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+    /* Sembunyikan radio */
+        input[type="radio"] {
+            display: none;
+        }
+
+    /* Label sebagai tab */
+        .tab-label {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            margin-right: -4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab-label:hover {
+            background-color: #ccc;
+        }
+
+    /* Konten tiap tab */
+        .tab-content {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+            animation: fadeIn 0.5s ease;
+        }
+
+    /* Tampilkan konten saat radio terpilih */
+        #tab1:checked ~ .content #content1,
+        #tab2:checked ~ .content #content2,
+        #tab3:checked ~ .content #content3,
+        #tab4:checked ~ .content #content4 {
+            display: block;
+        }
+
+    /* Aktifkan tab label */
+        #tab1:checked + label,
+        #tab2:checked + label,
+        #tab3:checked + label,
+        #tab4:checked + label {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+    /* Efek fade-in */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="Beranda kerajaan.html">Beranda</a>
+        <a href="Sejarah kerajaan.html">Sejarah</a>
+        <a href="Galeri kerajaan.html">Galeri</a>
+        <a href="Pemimpin kerajaan.html">Pemimpin</a>
+        <a href="Identitas kerajaan.html">Identitas</a>
+    </nav>
+
+    <header class="header">
+        <h1>Sejarah Kerajaan Makasar</h1>
+        <p>Mengenal awal pembentukan, puncak kejayaan, konflik, dan Kemunduran</p>
+    </header>
+
+    <div class="tab-container">
+        <input type="radio" name="tab" id="tab1" checked>
+        <label class="tab-label" for="tab1" style="color: rgb(0, 119, 255);">Pembentukan Kerajaan Makasar</label>
+        <input type="radio" name="tab" id="tab2">
+        <label class="tab-label" for="tab2" style="color: rgb(114, 74, 0);">Puncak Kejayaan</label>
+        <input type="radio" name="tab" id="tab3">
+        <label class="tab-label" for="tab3" style="color: red;">Konflik antar Kerajaan Makasar dan VOC</label>
+        <input type="radio" name="tab" id="tab4">
+        <label class="tab-label" for="tab4" style="color: rgb(63, 63, 63);">Kemunduran Kerajaan Makassar</label>
+
+        <div class="content">
+           <div id="content1" class="tab-content">
+                <h3>Abad ke-16 dan abad ke-17</h3>
+                <p>Pada awal pembentukannya, Kerajaan Makasar merupakan hasil penyatuan dua kerajaan bersaudara yang bertetangga, yaitu Kerajaan Gowa dan Kerajaan Tallo, yang berada di wilayah Sulawesi Selatan. Penyatuan ini terjadi pada awal abad ke-17, sekitar tahun 1607, di bawah kepemimpinan Raja Gowa ke-10, Daeng Manrabia, yang kemudian dikenal sebagai Sultan Alauddin setelah memeluk agama Islam pada tahun 1605.</p>
+                <p>Sebelum bersatu, Gowa dan Tallo adalah dua kerajaan kecil namun aktif dalam kegiatan perdagangan dan pelayaran. Kerajaan Gowa dikenal sebagai kekuatan militer yang dominan, sementara Tallo lebih unggul dalam hal administrasi dan diplomasi. Dengan menyatunya kedua kerajaan, terbentuklah Kerajaan Makasar, yang segera tumbuh menjadi kerajaan maritim yang kuat di kawasan Indonesia timur.</p>
+                <p>Ciri khas awal dari Kerajaan Makasar adalah semangat ekspansi dan Islamisasi. Setelah Raja Gowa memeluk Islam, kerajaan ini mulai menyebarkan agama Islam ke berbagai wilayah sekitar, termasuk Bone, Mandar, dan daerah Nusa Tenggara. Di masa ini juga, Makasar mulai memperkuat posisinya sebagai pusat perdagangan penting karena letaknya yang strategis di jalur pelayaran internasional. Pelabuhan Makassar ramai dikunjungi pedagang dari Arab, India, Tiongkok, dan bangsa-bangsa Eropa.</p>
+                <div><img src="https://asset.kompas.com/crops/40ezf4qGpLUPa6eXKa0z6o_hnhE=/0x80:1024x762/1200x800/data/photo/2021/04/20/607efb1a6736b.jpg" class="gambar-responsif"></div>
+            </div>
+
+            <div id="content2" class="tab-content">
+                <h2>Tahun 1653-1669</h2>
+                <p>Kerajaan Makasar mencapai puncak kejayaannya pada pertengahan abad ke-17, terutama di bawah kepemimpinan Sultan Hasanuddin (memerintah 1653–1669). Pada masa ini, kerajaan menjadi kekuatan maritim dan dagang terbesar di Indonesia bagian timur, bahkan diakui sebagai salah satu kekuatan penting di Asia Tenggara.</p>
+                <p>Hal-hal yang membuat Kerajaan Makasar menjadi puncak:</p>
+                <ul>
+                    <li><b>Pusat Perdagangan Internasional</b></li>
+                    <p>Pelabuhan Makassar menjadi salah satu pelabuhan paling ramai di kawasan timur Nusantara. Pedagang dari Arab, Persia, India, Tiongkok, Jawa, hingga Eropa berdagang di sana. Makassar dikenal karena keterbukaannya terhadap semua pedagang tanpa memihak, yang membuatnya tumbuh menjadi pelabuhan bebas.</p>
+                    <li><b>Kekuatan Militer dan Maritim</b></li>
+                    <p>Makasar memiliki armada laut yang kuat, dengan kapal-kapal Pinisi dan Lambo yang terkenal tangguh. Angkatan laut ini digunakan untuk melindungi jalur dagang dan memperluas pengaruh kerajaan ke wilayah seperti Nusa Tenggara, Maluku, dan bagian timur Kalimantan.</p>
+                </ul>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sultanate_of_Gowa_under_Hasanuddin%2C_ca._1658.png/1024px-Sultanate_of_Gowa_under_Hasanuddin%2C_ca._1658.png" class="gambar-responsif">
+            </div>
+
+            <div id="content3" class="tab-content">
+                <h2>Tahun 1666-1669</h2>
+                <p>Konflik ini berawal dengan VOC ingin memonopoli perdagangan rempah-rempah di wilayah timur Indonesia, terutama Maluku. Namun, Makassar menolak sistem monopoli dan membuka pelabuhannya bagi semua pedagang, baik lokal maupun asing. Dan juga Kerajaan Makasar di bawah Sultan Hasanuddin memperluas pengaruhnya hingga ke Nusa Tenggara dan Maluku, yang merupakan wilayah strategis bagi VOC</p>
+                <p>Dengan tidak monopoli dan ada ancaman pengaruh Kerajaan Makassar di tempat strategis, VOC, yang dipimpin oleh Laksamana Cornelis Speelman, mulai menyerang Makassar. Mereka bekerja sama dengan Arung Palakka, pemimpin Bone yang sebelumnya melarikan diri ke Batavia akibat konflik dengan Gowa.</p>
+                <p>Sultan Hasanuddin melakukan perlawanan keras dan tidak mau tunduk pada tuntutan VOC. Pertempuran besar terjadi selama tiga tahun. Makassar bertahan dengan kekuatan armada laut dan bentengnya, terutama <b>Benteng Somba Opu</b>. Namun, kekuatan gabungan VOC dan Arung Palakka, ditambah persenjataan lengkap, akhirnya berhasil memundurkan pasukan Makasar.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/The_capture_of_Makassar_from_Gowa_rule_by_the_VOC_and_Bone_forces%2C_1669.jpg" class="gambar-responsif">
+            </div>
+            
+            <div id="content4" class="tab-content">
+                <h2>Abad ke-17</h2>
+                <p>Kerajaan Makassar mengalami kemunduran besar setelah mencapai puncak kejayaannya pada abad ke-17. Kemunduran ini terjadi secara bertahap, dan berpuncak setelah kekalahan dalam Perang Makassar (1666–1669) melawan VOC. Ini faktor-faktor mengapa mengalami kemunduran:</p>
+                <ul>
+                    <li><b>Kekalahan dalam Perang Makassar</b></li>
+                    <p>VOC dan Arung Palakka dari Kerajaan Bone, berhasil menghancurkan kekuatan militer Makassar dan memaksa Sultan Hasanuddin menandatangani Perjanjian Bongaya pada tahun 1667.</p>
+                    <li><b>Perjanjian Bongaya</b></li>
+                    <p>Isi perjanjian ini sangat merugikan Kerajaan Makassar:</p>
+                    <ul>
+                        <li>VOC memperoleh hak monopoli perdagangan.</li>
+                        <li>Makassar harus membongkar benteng pertahanannya, termasuk Benteng Somba Opu.</li>
+                        <li>VOC menempatkan garnisun (pasukan tetap) di Makassar.</li>
+                        <li>Arung Palakka diangkat sebagai penguasa Bone dengan dukungan VOC.</li>
+                    </ul>
+                    <li><b>Dominasi VOC</b></li>
+                    <p>Setelah perang, VOC semakin menguasai jalur perdagangan di kawasan timur Indonesia. Kebijakan monopoli VOC menyebabkan kemunduran ekonomi Makassar, karena pelabuhan yang dulunya bebas dan ramai menjadi sepi akibat pembatasan dagang.</p>
+                    <li><b>Konflik Internal dan Pengkhianatan</b></li>
+                    <p>Setelah Sultan Hasanuddin turun takhta, terjadi ketidakstabilan politik di dalam istana. Kehadiran Arung Palakka dan dominasi VOC juga memicu ketegangan antar bangsawan dan rakyat.</p>
+                    <li><b>Melemahnya Armada dan Kekuasaan Maritim</b></li>
+                    <p>Setelah perang, sebagian besar kapal dihancurkan atau disita oleh VOC. Ini membuat kerajaan kehilangan kekuatan militernya di laut.</p>
+                    <li><b>Hilangnya Peran sebagai Pusat Islam dan Budaya</b></li>
+                    <p>Setelah jatuh ke tangan VOC, peran Makassar sebagai pusat penyebaran Islam dan budaya di Indonesia timur ikut meredup karena intervensi kolonial dan penurunan jumlah ulama serta aktivitas keagamaan.</p>
+                </ul>
+            </div>        
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 Website penyelusuran Kerajaan Makasar
+        <p>Sumber:</p>
+        <ul>
+            <li><a href="https://id.wikipedia.org/wiki/Kesultanan_Gowa#:~:text=Kesultanan%20Gowa%20(bahasa%20Makassar%3A%20%E1%A8%80%E1%A8%99%E1%A8%94%E1%A8%98%E1%A8%92%E1%A8%98%E1%A8%88%E1%A8%8A,yang%20didiami%20oleh%20suku%20Makassar.&text=Kesultanan%20Gowa%20pada%20puncak%20kejayaannya%2C%20ca%201658.">Wikipedia Kerajaan Makassar</a></li>
+            <li><a href="https://asset.kompas.com/crops/40ezf4qGpLUPa6eXKa0z6o_hnhE=/0x80:1024x762/1200x800/data/photo/2021/04/20/607efb1a6736b.jpg">Foto bangunan Balla Lompoa</a></li>
+            <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sultanate_of_Gowa_under_Hasanuddin%2C_ca._1658.png/1024px-Sultanate_of_Gowa_under_Hasanuddin%2C_ca._1658.png">Gambar puncak kejayaan wilayah Kerajaan Makassar</a></li>
+            <li><a href="https://upload.wikimedia.org/wikipedia/commons/1/19/The_capture_of_Makassar_from_Gowa_rule_by_the_VOC_and_Bone_forces%2C_1669.jpg">Gambar Perang Makassar</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
